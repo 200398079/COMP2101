@@ -4,7 +4,6 @@
 # Download the script, do the tasks described in the comments
 # Test your script, run it on the production server, screenshot that
 # Send your script to your github repo, and submit the URL with screenshot on Blackboard
-
 # Get the current hostname using the hostname command and save it in a variable
 HOSTNAME=$(hostname)
 #test
@@ -22,7 +21,6 @@ pcHostName="pc"$input1
 # If that hostname is not already in the /etc/hosts file, change the old hostname in that file to the new name using sed or something similar and
 #     tell the user you did that
 #e.g. sed -i "s/$oldname/$newname/" /etc/hosts
-
 sudo sed -i "s/$HOSTNAME/$pcHostName/" /etc/hosts
 echo "Hostname" $pcHostName "has been added to /etc/hosts file"
 #test
