@@ -14,15 +14,15 @@
 # This function will send an error message to stderr
 # Usage:
 #   error-message ["some text to print to stderr"]
-function error-message {
-
+function error-message { "Error message test stderr.\n" 1>&2
+echo $1
 }
 
 # This function will send a message to stderr and exit with a failure status
 # Usage:
 #   error-exit ["some text to print to stderr" [exit-status]]
-function error-exit {
-
+function error-exit { "Error exit test stderr.\n" 2>&exit 
+echo $2
 }
 #This function displays help information if the user asks for it on the command line or gives us a bad command line
 function displayhelp {
