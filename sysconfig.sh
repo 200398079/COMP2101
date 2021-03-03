@@ -25,7 +25,7 @@ function error-exit { "Error exit test stderr.\n" 2>&exit
 echo $2
 }
 #This function displays help information if the user asks for it on the command line or gives us a bad command line
-function displayhelp {
+function displayhelp { --help
 
 }
 
